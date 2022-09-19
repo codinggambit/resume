@@ -1,0 +1,258 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.3, 10 May 2020) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 and academicon fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+\colorlet{tagline}{VividPurple}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Sanjay Subbarao}
+\tagline{Senior Technical Program Manager}
+%% You can add multiple photos on the left or right
+%\photoR{2.5cm}{mmayer-wikipedia-cc-by-2_0}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{sansub88@gmail.com}
+   \phone{562-879-0862}
+  \mailaddress{Pacific North West}
+  \location{Olympia,WA}
+  \homepage{codinggambit.github.io/my_polite_inquiries/}
+  \twitter{@sanjaysrao88}
+  \linkedin{aiwhiz}
+%   \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+  % \orcid{0000-0000-0000-0000}
+  %% You can add your own arbtrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{Senior System \&  Application Engineer}{NXP Semiconductor}{Dec 2019 -- Present}{San Jose, CA}
+\begin{itemize}
+\item Connectivity Feasibility Analysis : Synthesize user requirements and technical constraints into a comprehensive design and actionable estimates for production time, costs, and viability.
+\item Requirements Definition: Define Qualification Requirements for customizable solutions for Bluetooth based on Profile level support(A2DP, HFP, SCO) and Stack(Bluez, Bluedroid) related requirements
+\end{itemize}
+
+\divider
+
+\cvevent{Senior Wireless Application Engineer}{Marvell Semiconductor}{Apr 2019 -- Dec 2019}{Santa Clara, CA}
+\begin{itemize}
+\item Collaborative Design: Interfaced with multiple teams and sought out metrics for improvement. Streamlined functionality based testing and validation  which reduced testing time by about 15 percent
+\item Process Optimization - Reviewed processes to avoid redundancies and created a positive feedback loop to reduce turnaround time by around 10 percent.
+\end{itemize}
+
+\divider
+
+\cvevent{Wireless Application Engineer II}{Marvell Semiconductor}{Apr 2017 -- Apr 2019}{Santa Clara, CA}
+\begin{itemize}
+\item Driver Integration: Performed Partner Platform bring up activities involving driver porting, platform validation and code check in into partner code repositories. 
+\item  Feature Validation: Developed sample applications for Wireless Proprietary features and validated it on Partner designs and documented it.
+\end{itemize}
+
+\divider
+
+\cvevent{Wireless Application Engineer }{Marvell Semiconductor}{Feb 2015 -- Apr 2017}{Santa Clara, CA}
+\begin{itemize}
+\item Partner Interaction: Involved in Issue debugging, log capture, analysis and communication of Issue Resolution description interfacing Partner Meetings. 
+\item Demo Bring up: Bringing up demos to showcase various features such as Wireless Casting, Time Sync, Angle of Arrival and description for trade shows such as Consumer Exhibition Showcase
+\end{itemize}
+
+\divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+\vspace*{8em}
+
+\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
+\wheelchart{1.5cm}{0.5cm}{%
+  10/13em/accent!30/Sleeping \& dreaming about work,
+  25/9em/accent!60/Resolving issues for partners \& internal teams,
+  5/11em/accent!10/\footnotesize\\[1ex]Organizing \& Planning Backpacking Trips,
+  20/11em/accent!40/Podcasts \& Audio books,
+  5/8em/accent!20/\footnotesize Internal \& Partner meetings\ for status updates and scrum,
+  30/9em/accent/Code review Documentation Bug tracking \& feedback loop,
+  5/8em/accent!20/ Friends \& Family Interaction
+}
+
+
+
+\cvsection{Publications}
+
+\nocite{*}
+
+\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Thesis}},type=book]
+
+\divider
+
+\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
+
+\divider
+
+\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Summary}
+\begin{quote}
+MBA-Educated Technology leader with
+over 7 years of experience as a Wireless System  and Applications Engineer in IOT and consumer scale product development and integration support. Have worked on WiFi and Bluetooth integration on a wide generation of products from bring up stages to Product shipment.
+\end{quote}
+
+\cvsection{Strengths}
+
+\cvachievement{\faTrophy}{Partner Management}{Engaging with partners to ensure issue resolution, and focus on goal oriented problem solving}
+
+\divider
+
+\cvachievement{\faHeartbeat}{Product Engineering}{I am actively involved as a part of the NXP Product Planning and Design Resolution activities as part of the PSM Review.}
+
+\divider
+
+\cvachievement{\faChartLine}{Product Definition and Growth}{I Have supported more than 6 Generations of Google Home and AI based Speaker based products and have helped ship more than 200 Million Products to date}
+
+
+\cvsection{Skills}
+
+\cvtag{Data Visualization}
+\cvtag{Feature Development}\\
+\cvtag{Cross-functional Teamwork \& Coordination}
+\cvtag{Data Analytics}
+\cvtag{Feature Documentation}
+\cvtag{Team Leadership}
+\cvtag{Product Spec Definition}
+\cvtag{KPI Metrics}
+
+\cvsection{Programming}
+
+\cvskill{Python}{4}
+% \divider
+
+\cvskill{C}{4}
+% \divider
+
+\cvskill{C++}{3}
+% \divider
+
+\cvskill{Bash}{4}
+
+\vspace*{4em}
+
+\cvsection{Education}
+
+\cvevent{Executive Master\ in Business Administration}{Quantic School of Business and Technology}{Mar 2021}{}
+
+\divider
+
+\cvevent{Nanodegree\ in Business Analytics}{Udacity}{Feb 2019}{}
+
+\divider
+
+\cvevent{M.S.\ in Electrical Engineering}{California State University, Long Beach}{Aug 2015 }{}
+
+\divider
+
+\cvevent{B.E.\ in Electronics and Communication}{Visvesvaraya Technological University}{Jul 2010}{}
+
+\end{paracol}
+
+\end{document}
